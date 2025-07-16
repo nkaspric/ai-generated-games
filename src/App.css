@@ -173,3 +173,7 @@
   box-shadow: 0 2px 12px #0004;
   display: block;
 }
+
+.left-align {
+  text-align: left;
+}
