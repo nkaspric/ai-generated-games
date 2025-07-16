@@ -1,0 +1,175 @@
+/* Modern homepage styles */
+.homepage-container {
+  min-height: 100vh;
+  width: 80vw;
+  margin-left: 10vw;
+  background: linear-gradient(135deg, #18332f 0%, #1e4d3a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+  transition: width 0.3s, margin 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .homepage-container {
+    width: 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .navbar {
+    padding: 1rem 1vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage-container {
+    width: 100vw;
+    margin: 0;
+    border-radius: 0;
+    min-height: 100vh;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    align-items: stretch;
+  }
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  .navbar-links li a {
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0.6em 0.8em;
+  }
+  .main-content {
+    padding: 2rem 0.3rem 1rem 0.3rem;
+  }
+  .main-logo {
+    width: 90%;
+    max-width: 200px;
+  }
+  .main-content h1 {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1rem;
+    padding: 1rem 0.7rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2.5rem;
+  background: rgba(24, 51, 47, 0.95);
+  box-shadow: 0 2px 12px 0 #0002;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.navbar-logo img {
+  height: 38px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 1px 6px #0003;
+}
+
+.gamepad-logo {
+  width: 48px;
+  height: 32px;
+  display: block;
+}
+
+.site-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2ecc40;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: #e0ffe0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.4em 1em;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-links li a.active,
+.navbar-links li a:hover {
+  background: #2ecc40;
+  color: #18332f;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+}
+
+.main-content .gamepad-logo {
+  margin-bottom: 1.5rem;
+  width: 80px;
+  height: 54px;
+}
+
+.main-content h1 {
+  font-size: 2.8rem;
+  color: #2ecc40;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #18332f44;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #e0ffe0;
+  margin: 0 auto;
+  background: rgba(24, 51, 47, 0.7);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 16px 0 #18332f22;
+  filter: drop-shadow(0 0 4px #2ecc40aa);
+  filter: drop-shadow(0 0 8px #2ecc40aa);
+}
+
+.main-logo {
+  width: 75%;
+  height: auto;
+  max-width: 320px;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0004;
+  display: block;
+}
